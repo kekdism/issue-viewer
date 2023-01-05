@@ -1,0 +1,70 @@
+.App {
+  display: flex;
+  flex-direction: column;
+
+  min-width: 320px;
+  height: 100%;
+  max-height: 100vh;
+  min-height: 100vh;
+}
+
+.header {
+  padding: 8px;
+  border-bottom: 1px solid rgba(255 255 255 / 0.2);
+}
+
+.header__search {
+  display: flex;
+  gap: 10px;
+}
+
+.header__input {
+  width: 100%;
+  max-width: 400px;
+}
+
+.container {
+  flex: 1;
+  display: flex;
+  max-height: 100%;
+  overflow-y: hidden;
+}
+
+.issues {
+  flex: 1;
+  padding: 8px;
+  width: 100%;
+  max-width: 480px;
+  overflow-y: auto;
+  flex-shrink: 0;
+  scroll-behavior: smooth;
+  border-right: 1px solid wheat;
+}
+
+.list {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  gap: 10px;
+}
+
+.item > button {
+  width: 100%;
+}
+
+.issue {
+  padding: 8px;
+  width: 100%;
+  overflow-y: scroll;
+  flex: 1;
+  min-width: 320px;
+}
+
+@media screen and (max-width: 960px) {
+  .list {
+    flex-shrink: 1;
+  }
+}

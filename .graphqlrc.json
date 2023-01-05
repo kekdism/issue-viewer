@@ -1,0 +1,23 @@
+{
+  "schema": {
+    "https://api.github.com/graphql": {
+      "headers": {
+        "Authorization": "Bearer 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"
+      }
+    }
+  },
+
+  "extensions": {
+    "codegen": {
+      "documents": ["src/**/*.tsx", "src/**/*.ts"],
+      "generates": {
+        "./src/__generated__/": {
+          "preset": "client",
+          "plugins": [],
+          "presetConfig": { "gqlTagName": "gql" }
+        }
+      },
+      "ignoreNoDocuments": true
+    }
+  }
+}
