@@ -152,9 +152,7 @@ const App = () => {
                       // Firefix
                       { minHeight: "1px" }
                     }
-                  >
-                    Давай еще
-                  </div>
+                  ></div>
                 </>
               )}
             </ul>
